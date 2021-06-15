@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -33,7 +35,7 @@
                         </li>
                         <li>
                              <a href="#0">
-                                <span>INICIO</span>
+                                <span>CONTACT</span>
                                 <span>
                                   <i aria-hidden="true"></i>    
                                 </span>
@@ -41,7 +43,7 @@
                         </li>
                         <li>
                             <a href="#0">
-                            <span>PROYECTS</span>
+                            <span>LOGIN</span>
                             <span>
                               <i aria-hidden="true"></i>    
                             </span>
@@ -59,15 +61,84 @@
             <div class="background-image"></div>
             <div class="text-on-image">
                 <a href="#0">
-                    <span>REGISTRO</span>
-                    <span>
-                    <i aria-hidden="true"></i>    
-                    </span>
-                </a>
+                <span>AUTOS</span>
+                <span>
+                  <i aria-hidden="true"></i>    
+                </span>
+              </a>
             </div>
         </div>
         
     </main>
+    <section class="section-crud">
+        <div class="container-crud">
+            <div class="title">
+                <h3>REGISTRO | DATOS DEL AUTOMOVIL</h3>
+                <P>Por favor introduzca la información solicitada en todos los campos.</P>
+            </div>
+            <div class="container">
+                <div class="container-data">
+                <div class="first-group">
+                    <div class="first">
+                        <div class="form-group">
+                            <label for="control-label" class="control-label">
+                                <i class="obligatorio">NAME</i>
+                            </label>
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="form-group">
+                            <label for="control-label" class="control-label">
+                                <i class="obligatorio">MODEL</i>
+                            </label>
+                            <input type="number" name="año" min="2000" max="2022" id="model">
+                            
+                        </div>
+                    </div>
+                </div> 
+                <div class="second-group">
+                    <div class="third">
+                        <div class="form-group">
+                            <label for="control-label" class="control-label">
+                                <i class="obligatorio">DOORS</i>
+                            </label>
+                            <input type="number" name="doors" min="2" max="5" id="doors">
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <div class="form-group">
+                                <label for="control-label" class="control-label">
+                                    <i class="obligatorio">COLOR</i>
+                                </label>
+                                <input type="color" name="colorsecundario" list="color-list" id="color">
+                        </div>
+                        <datalist id="color-list">
+                            <option value="#000000">  
+                            <option value="#FFFFFF">       
+                            <option value="#ED1A14">           
+                            <option value="#8C8585">  
+                            <option value="#305DD6">  
+                            <option value="#EEE41A">           
+                          </datalist>
+                    </div>
+                    <div class="fourth">
+                        <div class="form-group">
+                                <label for="control-label" class="control-label">
+                                    <i class="obligatorio">BRAND</i>
+                                </label>
+                                <input type="text" id="color">
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            <div class="submit-btn">
+                <input type="submit" value="REGISTRAR">
+            </div>
+        </div>
+    </section>
 
 
     <script src="autosCRUD.js"></script>

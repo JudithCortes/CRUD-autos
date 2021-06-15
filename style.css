@@ -3,6 +3,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .contaner-nav{
@@ -65,7 +66,7 @@
 
 .menu a span:first-child, .text-on-image a span:first-child{
     display: inline-block;
-    padding: 10px;
+    padding: 50px;
     color: #fff;
 }
 
@@ -120,3 +121,80 @@
   .text-on-image:hover {
     animation: bounce 1s;
   }
+
+  .section-crud{
+      width: 100%;
+      height: 470px;
+  }
+
+  .container-crud{
+      width: 80%;
+      margin: auto;
+      height: 100%;
+  }
+
+  h3{
+    font-size: 1.825em;
+    line-height: 1.4em;
+    margin: 20px 0 10px;
+  }
+
+  p{
+    margin: 0 0 10px;
+  }
+
+  .container{
+      margin-top:35px;
+  }
+
+  .container-data{
+      margin-top: 10px;
+      height: 270px;
+      background: #f1f1f161;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;  
+    }
+
+
+  .container-data > div{
+    
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .form-group{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group > input{
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid red;
+    width: 180px;
+    background: #f1f1f161;   
+  }
+
+  input:focus{
+       outline: none;
+  }
+
+.obligatorio {
+    font-weight: bold;
+}
+
+.submit-btn{
+    height: 70px;
+    position: relative;
+}
+
+.submit-btn > input{
+    position: absolute;
+    left: 41%;
+    top: 25%;
+    border: none;
+    padding: 15px 56px;
+    font-size: initial;
+    background-color: black;
+    color: white;
+}
