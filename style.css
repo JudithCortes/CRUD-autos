@@ -10,7 +10,6 @@
     height: 100px;
     border: 1px solid;
     position: relative;
-    /*z-index: 10;*/
     background:#000;
 }
 
@@ -34,9 +33,6 @@
     height: 100%;
     width: 95%;
     margin: 0 auto;
-    /*
-    float: right;
-    align-items: center;*/
 }
 
 .container-brand{
