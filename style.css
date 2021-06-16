@@ -215,3 +215,44 @@
 .table-list-cars{
   /*background: #000000;*/
 }
+
+/*TABLA*/
+.container-table{
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+#table th {
+  width: 14.2857%;
+  height: 35px;
+  background-color:black;
+  color: #fff;
+}
+
+#table td{
+  width: 14.2857%;
+  height: 35px;
+  background-color:#fff;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+tr{
+  display: flex;
+  height: 40px;
+  width :100%;
+  align-items: center;
+}
+
+th, td{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+td{
+  font-size: 11px;
+}
+
