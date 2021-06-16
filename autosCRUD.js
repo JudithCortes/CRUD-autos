@@ -82,6 +82,14 @@ const renderRegister = () => {
     table.appendChild(listCars);
 }
 
+const deleteItem = (car) =>{
+    console.log(car);
+}
+
+const editItem = (car) =>{
+    console.log(car);
+}
+
 //eventListener
 
 form.addEventListener("submit", (e)=>{
@@ -102,15 +110,35 @@ form.addEventListener("submit", (e)=>{
 document.addEventListener("DOMContentLoaded", renderRegister);
 
 listCars.addEventListener("click", (e) => {
+
     e.preventDefault();
-    //console.log(e);
-    //console.log(e.target.innerHTML);
-    //console.log(e.path[2].cells[0].innerHTML, e.path[2].cells[1].innerHTML, e.path[2].cells[2].innerHTML,
-      // e.path[2].cells[3].innerHTML, e.path[2].cells[4].innerHTML);
-    if(e.target.innerHTML === "edit"){
-        //console.log("vamos a traer los datos para editar");
+
+    if(e.target.innerHTML === "edit" || e.target.innerHTML === "delete"){
+
+            let traeName = e.path[2].cells[0].innerHTML; 
+            let traeModel = e.path[2].cells[1].innerHTML; 
+            let traeDoors = parseInt(e.path[2].cells[2].innerHTML); 
+            let traeColor = e.path[2].cells[3].innerHTML; 
+            let traeBrand = e.path[2].cells[4].innerHTML;
+
+            let infoItem = {
+                name: traeName, 
+                model: traeModel, 
+                doors: traeDoors,
+                color: traeColor, 
+                brand: traeBrand
+            }
+            //console.log(infoItem);
+            if(e.target.innerHTML === "delete"){
+                //acción eliminar
+                deleteItem(infoItem);
+            }
+            if(e.target.innerHTML === "edit"){
+                //acción editar
+                editItem(infoItem);
+        
+            }
+
     }
-    else{
-        //console.log("vamos a eliminar")
-    }
+    
 });
