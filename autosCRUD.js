@@ -68,15 +68,13 @@ const renderRegister = () => {
                 newTr.appendChild(newTdBrand);
             
             let newTdEdit = document.createElement("td");
-            newTdEdit.setAttribute("class", "columna");
-            newTdEdit.setAttribute("class", "edit");
-            newTdEdit.innerHTML = `<i class=" icono fas fa-edit"></i>`;
+            newTdEdit.setAttribute("class", "columna edit");
+            newTdEdit.innerHTML = `<i class=" icono fas fa-edit">edit</i>`;
                 newTr.appendChild(newTdEdit);
             
             let newTdDelete = document.createElement("td");
-            newTdDelete.setAttribute("class", "columna");
-            newTdDelete.setAttribute("class", "delete");
-            newTdDelete.innerHTML = `<i class=" icono fas fa-trash"></i>`;
+            newTdDelete.setAttribute("class", "columna delete");
+            newTdDelete.innerHTML = `<i class=" icono fas fa-trash">delete</i>`;
                 newTr.appendChild(newTdDelete);
 
         });
@@ -103,3 +101,16 @@ form.addEventListener("submit", (e)=>{
   
 document.addEventListener("DOMContentLoaded", renderRegister);
 
+listCars.addEventListener("click", (e) => {
+    e.preventDefault();
+    //console.log(e);
+    //console.log(e.target.innerHTML);
+    //console.log(e.path[2].cells[0].innerHTML, e.path[2].cells[1].innerHTML, e.path[2].cells[2].innerHTML,
+      // e.path[2].cells[3].innerHTML, e.path[2].cells[4].innerHTML);
+    if(e.target.innerHTML === "edit"){
+        //console.log("vamos a traer los datos para editar");
+    }
+    else{
+        //console.log("vamos a eliminar")
+    }
+});
