@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -77,6 +79,8 @@
                 <P>Por favor introduzca la información solicitada en todos los campos.</P>
             </div>
             <div class="container">
+
+                <form action="" id ="formulario">
                 <div class="container-data">
                 <div class="first-group">
                     <div class="first">
@@ -92,7 +96,7 @@
                             <label for="control-label" class="control-label">
                                 <i class="obligatorio">MODEL</i>
                             </label>
-                            <input type="number" name="año" min="2000" max="2022" id="model">
+                            <input type="text" name="año" id="model">
                             
                         </div>
                     </div>
@@ -111,15 +115,7 @@
                                 <label for="control-label" class="control-label">
                                     <i class="obligatorio">COLOR</i>
                                 </label>
-                                <input type="color" name="colors" list="color-list" id="color">
-                                <datalist id="color-list">
-                                    <option value="#000000">  
-                                    <option value="#FFFFFF">       
-                                    <option value="#ED1A14">           
-                                    <option value="#8C8585">  
-                                    <option value="#305DD6">  
-                                    <option value="#EEE41A">           
-                                  </datalist>
+                                <input type="text" name="colors" list="color-list" id="color">
                         </div>
                     </div>
                     <div class="fourth">
@@ -127,16 +123,28 @@
                                 <label for="control-label" class="control-label">
                                     <i class="obligatorio">BRAND</i>
                                 </label>
-                                <input type="text" id="color">
+                                <input type="text" id="brand">
                         </div>
                     </div>
                 </div>
                 
                 </div>
+                <div class="submit-btn">
+                    <input type="submit" value="REGISTRAR">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="table-list-cars">
+        <div class="container-list">
+            <div class="title-lista">
+            <h4>AUTOMÓVILES REGISTRADOS</h4>
             </div>
-            <div class="submit-btn">
-                <input type="submit" value="REGISTRAR">
+        <div class="container-list-cars">
+            <div id = "list-cars">
+
             </div>
+        </div>
         </div>
     </section>
 

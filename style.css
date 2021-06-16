@@ -127,7 +127,7 @@
       height: 470px;
   }
 
-  .container-crud{
+  .container-crud, .container-list{
       width: 80%;
       margin: auto;
       height: 100%;
@@ -139,12 +139,20 @@
     margin: 20px 0 10px;
   }
 
+  h4{
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin:35px 0;
+    
+  }
+
   p{
     margin: 0 0 10px;
   }
 
   .container{
       margin-top:35px;
+      height: auto;
   }
 
   .container-data{
@@ -197,4 +205,13 @@
     font-size: initial;
     background-color: black;
     color: white;
+}
+
+.container-list-cars{
+  margin-top: 10px;
+  height: 270px;
+}
+
+.table-list-cars{
+  /*background: #000000;*/
 }
