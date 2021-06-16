@@ -82,12 +82,25 @@ const renderRegister = () => {
     table.appendChild(listCars);
 }
 
-const deleteItem = (car) =>{
-    console.log(car);
+const deleteItem = (infoCar) =>{
+    //console.log(infoCar);
+    let indexArray;
+    arrayListCars.forEach((elemento, index)=>{
+        if(elemento.infoCar === infoCar){
+            indexArray = index;
+            console.log(index);
+        }
+    });
+    arrayListCars.splice(indexArray, 1);
+    save();
 }
 
-const editItem = (car) =>{
-    console.log(car);
+const editItem = (infoCar) => {
+    console.log(infoCar);
+    let indexArray = arrayListCars.findIndex(elemento=>elemento.infoCar === infoCar);
+    console.log(indexArray);
+    //arrayListCars[indexArray].
+    save();
 }
 
 //eventListener
@@ -117,7 +130,7 @@ listCars.addEventListener("click", (e) => {
 
             let traeName = e.path[2].cells[0].innerHTML; 
             let traeModel = e.path[2].cells[1].innerHTML; 
-            let traeDoors = parseInt(e.path[2].cells[2].innerHTML); 
+            let traeDoors = e.path[2].cells[2].innerHTML; 
             let traeColor = e.path[2].cells[3].innerHTML; 
             let traeBrand = e.path[2].cells[4].innerHTML;
 
@@ -127,7 +140,7 @@ listCars.addEventListener("click", (e) => {
                 doors: traeDoors,
                 color: traeColor, 
                 brand: traeBrand
-            }
+            };
             //console.log(infoItem);
             if(e.target.innerHTML === "delete"){
                 //acción eliminar
